@@ -1,13 +1,24 @@
-/** default-style */
-.default-area {
-  display: flex;
+.collapsible-panel-area {
+  padding: 10px;
 }
 
-.default-area-action-btn button {
+.collapsible-panel-area__default-area {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #e0e0e0;
+  padding-bottom: 10px;
+}
+.collapsible-panel-area__default-area .default-area-slot {
+  flex: 1;
+}
+.collapsible-panel-area__default-area .default-area-action-btn {
+  flex:1;
+}
+/** public-button-style */
+.public-button-style {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: 6px 12px;
   border-radius: 6px;
   background-color: #3b82f6; /* primary */
   color: #ffffff;

@@ -107,15 +107,15 @@ export const Demo = defineComponent({
     }, { immediate: true });
 
     return () => (
-      <div class="w-full flex-auto flex-col items-center justify-center">
-        <div class="default-area">
+      <div class="collapsible-panel-area w-full flex-auto flex-col items-center justify-center">
+        <div class="collapsible-panel-area__default-area">
           <div class="default-area-slot">
             {slots.default?.()}
           </div>
           <div class="default-area-action-btn">
             {
               slots.action ? slots.action({ toggle, status: status.value }) : (
-                <button onClick={toggle}>
+                <button class="public-button-style" onClick={toggle}>
                   <SvgIcon type="mdi" path={iconPath.value} />
                 </button>
               )
