@@ -1,0 +1,33 @@
+/** default-style */
+.default-area {
+  display: flex;
+}
+
+.default-area-action-btn button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px 12px;
+  border-radius: 6px;
+  background-color: #3b82f6; /* primary */
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+}
+
+.default-area-action-btn button:hover {
+  background-color: #2563eb; /* primary darker */
+}
+.panel-area {
+  background-color: #f0f0f0;
+  overflow: hidden;
+  transition: height var(--lasting, 300ms) linear;
+
+}
+.collapse-area {
+  height: 0;
+}
+.expand-area {
+  /* 通过 JS 写入 --panel-height */
+  height: var(--panel-height, auto);
+}
